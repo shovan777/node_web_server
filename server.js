@@ -27,6 +27,7 @@ app.use((req, res, next) => {
     pageTitle: 'Maintainence Page',
     // currentYear: new Date().getFullYear()
   });
+  next();
 });
 
 app.use(express.static(__dirname + '/public'));
