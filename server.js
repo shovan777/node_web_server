@@ -69,6 +69,12 @@ app.get('/about', (request, response) => { // about route
     // currentYear: new Date().getFullYear()
   });
 });
+app.get('/projects', (request, response) => { // about route
+  response.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    // currentYear: new Date().getFullYear()
+  });
+});
 
 app.get('/bad', (request, response) => {
   response.send({
